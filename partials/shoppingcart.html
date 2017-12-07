@@ -1,0 +1,8 @@
+<div>
+  <input ng-model="$ctrl.itemFilter">
+  <ul>
+    <li ng-repeat="item in $ctrl.itemList | filter:$ctrl.itemFilter track by $index "> <a href="#"></a> {{item}} </li>
+  </ul>
+  <input ng-model="$ctrl.newItem">
+  <button ng-click="$ctrl.addItem($ctrl.newItem)">Add Item</button>
+</div>
